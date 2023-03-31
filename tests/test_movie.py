@@ -1,9 +1,15 @@
 import pytest
+from viewing_party.movie import Movie
 
-def test_1():
+def test_return_correct_attributes():
     # Arrange
+
+    mulan = Movie("Mulan", "Animation", 5)
 
     # Act
 
     # Assert
-    pass
+
+    assert mulan.title == "Mulan"
+    assert mulan.genre == "Animation"
+    assert mulan.rating == 5
